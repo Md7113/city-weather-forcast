@@ -26,11 +26,66 @@
     ></script>
 </head>
 <body>
-
-
-
-
-
+    <header>
+        <br>
+        <h1>Weather Dashboard</h1>
+        <p id="dateTime"></p>
+    </header>
+<div class="vh-100" id="fullContent">
+    <br>
+    <main class="row">
+        <aside class="col-2">
+            <div class="custom-card">
+                <br>
+                <div class="custom-title">Search for a city:</div>
+                <input type="text" id="city">
+                <button>Search</button>
+                <br>
+            </div>
+            <div class="custom-btn"></div>
+        </aside>
+        <section class="col-10" id="customContent">
+            <section class="big-data-card m-3"></section>
+            <section class="little-data-card row">
+                <div class="card-data m-3 col-2" id="day1">
+                    <div id="dateC1"></div>
+                    <div id="symC1"></div>
+                    <div id="tempC1"></div>
+                    <div id="windC1"></div>
+                    <div id="humC1"></div>
+                </div>
+                <div class="card-data m-3 col-2" id="day2">
+                    <div id="dateC2"></div>
+                    <div id="symC2"></div>
+                    <div id="tempC2"></div>
+                    <div id="windC2"></div>
+                    <div id="humC2"></div>
+                </div>
+                <div class="card-data m-3 col-2" id="day3">
+                    <div id="dateC3"></div>
+                    <div id="symC3"></div>
+                    <div id="tempC3"></div>
+                    <div id="windC3"></div>
+                    <div id="humC3"></div>
+                </div>
+                <div class="card-data m-3 col-2" id="day4">
+                    <div id="dateC4"></div>
+                    <div id="symC4"></div>
+                    <div id="tempC4"></div>
+                    <div id="windC4"></div>
+                    <div id="humC4"></div>
+                </div>
+                <div class="card-data m-3 col-2" id="day5">
+                    <div id="dateC5"></div>
+                    <div id="symC5"></div>
+                    <div id="tempC5"></div>
+                    <div id="windC5"></div>
+                    <div id="humC5"></div>
+                </div>
+            </section>
+        </section>
+    </main>
+</div>
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
