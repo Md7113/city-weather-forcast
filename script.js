@@ -1,5 +1,16 @@
 cityName = ""
 var day = moment().format("MMM Do YY")
+var day1 = moment().add(1,'day').format("MMM Do YY")
+var day2 = moment().add(2,'day').format("MMM Do YY")
+var day3 = moment().add(3,'day').format("MMM Do YY")
+var day4 = moment().add(4,'day').format("MMM Do YY")
+var day5 = moment().add(5,'day').format("MMM Do YY")
+$("#dateC1").text(day1)
+$("#dateC2").text(day2)
+$("#dateC3").text(day3)
+$("#dateC4").text(day4)
+$("#dateC5").text(day5)
+console.log(day1)
 $("#big-data-card").addClass('hidden')
 $("#little-data-card").addClass('hidden')
  var repeat = 1
