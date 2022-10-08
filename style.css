@@ -37,9 +37,17 @@ img{
 .big-data-card{
     height: 250px;
     width: 95%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(174, 174, 174);
     border-radius: 15px;
     border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.big-data-card div{
+    font-size: 25px;
+    margin-left: 20px;
 }
 
 .hidden{
@@ -54,5 +62,16 @@ img{
     width: 95%;
     background-color: rgb(214, 214, 214);
     border: 3px solid black;
+}
+#custom-btn{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#custom-btn button{
+    margin: 5px;
+    border-radius: 5px;
 }
 
