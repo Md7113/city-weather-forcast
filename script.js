@@ -126,6 +126,27 @@ function runWeather2(event){
                     
                     }
                     }
+                    var icon = data.list[0].weather[0].icon
+                    var dayNight = icon.split('')
+                    console.log(dayNight)
+                    var dNValue = dayNight[(dayNight.length-1)]
+                    if(dNValue== 'd'){
+                        $('#big-data-card').removeClass('night')
+                        $('#big-data-card').addClass('day')
+                    for(i=1;i<6;i++){
+                        $('#day'+i).removeClass('night1')
+                        $('#day'+i).addClass('day1')
+                    }}
+                    if(dNValue== 'n'){
+                        $('#big-data-card').removeClass('day')
+                        $('#big-data-card').addClass('night')
+                    
+                    for(i=1;i<6;i++){
+                        $('#day'+i).removeClass('day1')
+                        $('#day'+i).addClass('night1')
+                    }}
+
+
                 });
         });
 }
