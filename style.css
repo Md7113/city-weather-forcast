@@ -3,7 +3,7 @@
 }
 
 #fullContent{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(191, 191, 191);
     
 }
 header{
@@ -24,6 +24,7 @@ img{
 }
 
 .custom-card{
+    border: 3px solid black;
     background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(87, 87, 255));
     height: 200px;
     border-radius: 15px;
@@ -34,6 +35,7 @@ img{
     font-size: 15px;
     font-weight: bold;
 }
+
 #city{
     width: 90%;
 }
@@ -107,9 +109,9 @@ img{
     height: 200px;
     width: 95%;
     border: 3px solid black;
-    background-image: linear-gradient(to bottom, rgb(0, 0, 172), white);
-    
+    background-image: linear-gradient(to bottom, rgb(0, 0, 172), rgb(255, 255, 255));
 }
+
 .day1{
     color: rgb(0, 0, 0);
     display: flex;
