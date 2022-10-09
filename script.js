@@ -10,7 +10,7 @@ $("#dateC2").text(day2)
 $("#dateC3").text(day3)
 $("#dateC4").text(day4)
 $("#dateC5").text(day5)
-console.log(day1)
+
 $("#big-data-card").addClass('hidden')
 $("#little-data-card").addClass('hidden')
  var repeat = 1
@@ -61,6 +61,9 @@ function runWeather(event){
             console.log(data);
             var lat = data[0].lat
             var lon = data[0].lon
+            var backImg = "https://maps.googleapis.com/maps/api/staticmap?center="+lat+','+lon+"&scale=2&size=900x150&zoom=12&key=AIzaSyBSokTJWEqsYy2vJP9SpktywdnyQXrFzuw"
+            console.log(backImg)
+            $('#big-data-card').attr('style','background-image:url('+backImg+')')
             var weatherUrl = "https://api.openweathermap.org/data/2.5/forecast?lat="+lat+"&lon="+lon+"&units=imperial&exclude=minutely,hourly&appid=ca232c9f5c54a2dd3fb874485c4a91bd"
             fetch(weatherUrl)
                 .then(function (response) {
@@ -68,7 +71,7 @@ function runWeather(event){
                 })
                 .then(function (data) {
                     console.log(data);
-                    $("#cityName").text(cityName+'---'+day)
+                    $("#cityName").text(cityName+':  '+day)
                     for(i=0;i<6;i++){
                     if(i==0){
                     $("#symC"+i).attr("src","http://openweathermap.org/img/wn/"+data.list[0].weather[0].icon+"@2x.png")
@@ -117,17 +120,20 @@ function runWeather2(event){
             return response.json();
         })
         .then(function (data) {
-            console.log(data);
+            
             var lat = data[0].lat
             var lon = data[0].lon
+            var backImg = "https://maps.googleapis.com/maps/api/staticmap?center="+lat+','+lon+"&scale=2&size=900x150&zoom=12&key=AIzaSyBSokTJWEqsYy2vJP9SpktywdnyQXrFzuw"
+            console.log(backImg)
+            $('#big-data-card').attr('style','background-image:url('+backImg+')')
             var weatherUrl = "https://api.openweathermap.org/data/2.5/forecast?lat="+lat+"&lon="+lon+"&units=imperial&exclude=minutely,hourly&appid=ca232c9f5c54a2dd3fb874485c4a91bd"
             fetch(weatherUrl)
                 .then(function (response) {
                     return response.json();
                 })
                 .then(function (data) {
-                    console.log(data);
-                    $("#cityName").text(cityName+'---'+day)
+                   
+                    $("#cityName").text(cityName+':  '+day)
                     for(i=0;i<6;i++){
                     if(i==0){
                     $("#symC"+i).attr("src","http://openweathermap.org/img/wn/"+data.list[0].weather[0].icon+"@2x.png")
@@ -147,7 +153,7 @@ function runWeather2(event){
                     }
                     var icon = data.list[0].weather[0].icon
                     var dayNight = icon.split('')
-                    console.log(dayNight)
+                   
                     var dNValue = dayNight[(dayNight.length-1)]
                     if(dNValue== 'd'){
                         $('#big-data-card').removeClass('night')

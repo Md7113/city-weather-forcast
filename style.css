@@ -7,15 +7,16 @@
     
 }
 header{
+    
     text-align: center;
     height: 100px;
     /* background-color: rgb(123, 171, 155); */
-    background-image: linear-gradient(to right, blue, white);
+    background-image: linear-gradient(to top,rgb(11, 0, 161), rgb(255, 255, 255));
 }
 
 h1{
     font-size: 60px;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 img{
@@ -80,25 +81,25 @@ img{
 }
 
 .night{
-    height: 250px;
-    width: 95%;
+    height: 300px;
+    width: 1000px;
     border-radius: 15px;
     border: 3px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: linear-gradient(to bottom, rgb(0, 0, 172), white);
+    /* background-image: linear-gradient(to bottom, rgb(0, 0, 172), white); */
     
 }
 .day{
-    height: 250px;
-    width: 95%;
+    height: 300px;
+    width: 1000px;
     border-radius: 15px;
     border: 3px solid black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: linear-gradient(to bottom, rgb(54, 118, 255), white);
+    /* background-image: linear-gradient(to bottom, rgb(54, 118, 255), white); */
 }
 
 .night1{
@@ -123,6 +124,32 @@ img{
     background-image: linear-gradient(to bottom, rgb(54, 118, 255), white);
 }
 
-#cityName, #dateC1, #dateC2, #dateC3, #dateC4, #dateC5{
+ #dateC1, #dateC2, #dateC3, #dateC4, #dateC5{
     color:aliceblue;
+}
+#cityName{
+    text-align: center;
+    margin-top: 9px;
+    background-color: rgb(147, 150, 153);
+    width: 220px;
+    border-radius: 15px;
+    border: 3px solid black;
+}
+#symC0{
+    background-image: linear-gradient(to bottom,rgb(11, 0, 161), white);
+    width: 50px;
+    border-radius: 15px;
+    border: 3px solid black;
+} 
+#tempC0, #windC0, #humC0{
+    text-align: center;
+    background-color: rgb(184, 184, 184);
+    width: 160px;
+    height: 40px;
+    border-radius: 15px;
+    border: 3px solid black;
+}
+
+#humC0{
+    margin-bottom: 10px;
 }
