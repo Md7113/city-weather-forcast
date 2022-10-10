@@ -61,7 +61,7 @@ function runWeather(event){
             console.log(data);
             var lat = data[0].lat
             var lon = data[0].lon
-            var backImg = "https://maps.googleapis.com/maps/api/staticmap?center="+lat+','+lon+"&scale=2&size=900x150&zoom=12&key=AIzaSyBSokTJWEqsYy2vJP9SpktywdnyQXrFzuw"
+            var backImg = "https://maps.googleapis.com/maps/api/staticmap?center="+lat+','+lon+"&scale=2&size=900x150&zoom=11&key=AIzaSyBSokTJWEqsYy2vJP9SpktywdnyQXrFzuw"
             console.log(backImg)
             $('#big-data-card').attr('style','background-image:url('+backImg+')')
             var weatherUrl = "https://api.openweathermap.org/data/2.5/forecast?lat="+lat+"&lon="+lon+"&units=imperial&exclude=minutely,hourly&appid=ca232c9f5c54a2dd3fb874485c4a91bd"
@@ -124,7 +124,7 @@ function runWeather2(event){
             
             var lat = data[0].lat
             var lon = data[0].lon
-            var backImg = "https://maps.googleapis.com/maps/api/staticmap?center="+lat+','+lon+"&scale=2&size=900x150&zoom=12&key=AIzaSyBSokTJWEqsYy2vJP9SpktywdnyQXrFzuw"
+            var backImg = "https://maps.googleapis.com/maps/api/staticmap?center="+lat+','+lon+"&scale=2&size=900x150&zoom=11&key=AIzaSyBSokTJWEqsYy2vJP9SpktywdnyQXrFzuw"
             console.log(backImg)
             $('#big-data-card').attr('style','background-image:url('+backImg+')')
             var weatherUrl = "https://api.openweathermap.org/data/2.5/forecast?lat="+lat+"&lon="+lon+"&units=imperial&exclude=minutely,hourly&appid=ca232c9f5c54a2dd3fb874485c4a91bd"

@@ -2,10 +2,10 @@
 
 
 ## Deployed link
-* [Mason Davis's Portfolio](https://md7113.github.io/Mason-Davis-Portfolio/)
+* [City weather app](https://md7113.github.io/city-weather-forcast/)
 
 ## site picture
-![site](Pass-pic-1.png)
+![site](Weather-pic-1.png)
 
 
 
@@ -17,21 +17,18 @@
 - GitHub : hosting the repositroy responsible for the website
 
 ## Authors
-- Writen and styled By Unknown author
-- given logic and function by Mason Davis
+- writen styled and built by Mason Davis
 
 ## summary
-This repository contains all the code to generate a unique password based on a specified set of peramiters everytime it is requested.
+This repository contains all the code to generate a five day forcast for the weather of any given city. It also displays a map of the given city. 
 
 ## Code Snippet
-This is a snippet Showing the formula used to select the number of digits requested and then generate that number of digits to create an arrayed password
+This is a snippet Showing the formula used to generate the photo using a google maps API.
 
 ```javaScript
-for(i=1 ; i<=passLength ; i++){
-var randPlaceHolder = Math.floor(Math.random() * passArr.length)
-var passAssign = passArr[randPlaceHolder]
-passWord.push(passAssign)
-}
+ var backImg = "https://maps.googleapis.com/maps/api/staticmap?center="+lat+','+lon+"&scale=2&size=900x150&zoom=11&key=AIzaSyBSokTJWEqsYy2vJP9SpktywdnyQXrFzuw"
+
+$('#big-data-card').attr('style','background-image:url('+backImg+')')       
 ```
 
 
