@@ -114,7 +114,7 @@ function runWeather(event){
 
 function runWeather2(event){
     cityName = $(event.target).attr('id')
-    var cityCor = "http://api.openweathermap.org/geo/1.0/direct?q="+cityName+"&appid=ca232c9f5c54a2dd3fb874485c4a91bd"
+    var cityCor = "https://api.openweathermap.org/geo/1.0/direct?q="+cityName+"&appid=ca232c9f5c54a2dd3fb874485c4a91bd"
     fetch(cityCor)
         .then(function (response) {
             return response.json();

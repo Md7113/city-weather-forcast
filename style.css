@@ -3,6 +3,7 @@
 }
 
 #fullContent{
+    min-height: 100vh;
     background-color: rgb(191, 191, 191);
     
 }
